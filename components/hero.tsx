@@ -74,7 +74,7 @@ export function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg bg-transparent"
+                className="border-2 border-white text-black hover:bg-white hover:text-black px-8 py-6 text-lg bg-transparent"
                 asChild
               >
                 <a href="#services">View Services</a>

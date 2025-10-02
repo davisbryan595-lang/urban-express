@@ -182,7 +182,7 @@ export function Contact() {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-primary hover:bg-primary/90 text-white font-semibold"
+                className="w-full bg-primary hover:bg-primary/90 text-black font-semibold"
               >
                 <Send className="w-5 h-5 mr-2" />
                 Send Message
