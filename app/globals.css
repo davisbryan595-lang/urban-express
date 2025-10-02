@@ -108,10 +108,27 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    min-height: 100vh;
+    background: linear-gradient(270deg, var(--brand-gray-dark), var(--brand-blue), var(--brand-gray));
+    background-size: 600% 600%;
+    animation: gradientShift 30s ease infinite;
   }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Animated gradient */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
