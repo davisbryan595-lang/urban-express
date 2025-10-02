@@ -10,7 +10,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/urbanlogo-YONvclwHhYZfPYiVAcKk1oQLnlrGBY.jpeg"
+                src="/urban.png"
                 alt="Urban Express Mobile Detailing"
                 width={40}
                 height={40}

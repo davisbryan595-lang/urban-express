@@ -36,7 +36,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/urbanlogo-YONvclwHhYZfPYiVAcKk1oQLnlrGBY.jpeg"
+              src="/urban.png"
               alt="Urban Express Mobile Detailing"
               width={50}
               height={50}
