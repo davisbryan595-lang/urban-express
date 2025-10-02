@@ -50,7 +50,7 @@ export function Testimonials() {
   const prev = () => setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
 
   return (
-    <section id="testimonials" className="py-24 bg-gradient-to-b from-zinc-950 to-black">
+    <section id="testimonials" className="py-24 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">What Our Clients Say</h2>
