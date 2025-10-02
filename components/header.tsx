@@ -33,17 +33,19 @@ export function Header() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="flex items-center gap-3">
+          {/* Logo + Title as Home link */}
+          <a href="/" className="flex items-center gap-3 group">
             <Image
               src="/urban.png"
               alt="Urban Express Mobile Detailing"
-              width={70}
-              height={60}
-              className="w-13 h-15 object-contain"
+              width={140}   // doubled from 70
+              height={120}  // doubled from 60
+              className="w-[140px] h-[120px] object-contain transition-transform group-hover:scale-105"
             />
-            <span className="text-white font-bold text-lg hidden sm:inline">Urban Express</span>
-          </div>
+            <span className="text-white font-bold text-xl hidden sm:inline group-hover:text-primary transition-colors">
+              Urban Express
+            </span>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -96,7 +98,10 @@ export function Header() {
                   {link.label}
                 </a>
               ))}
-              <a href="tel:414-460-6453" className="flex items-center gap-2 text-primary py-2 font-semibold">
+              <a
+                href="tel:414-460-6453"
+                className="flex items-center gap-2 text-primary py-2 font-semibold"
+              >
                 <Phone className="w-4 h-4" />
                 414-460-6453
               </a>
