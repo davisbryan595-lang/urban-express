@@ -44,7 +44,7 @@ function BeforeAfterSlider({ before, after, title }: { before: string; after: st
   }
 
   return (
-    <Card className="bg-zinc-900 border-zinc-800 overflow-hidden group">
+    <Card className="bg-transparent ">
       <div
         className="relative aspect-[4/3] cursor-ew-resize select-none"
         onMouseMove={handleMove}
