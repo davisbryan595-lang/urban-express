@@ -38,9 +38,9 @@ export function Header() {
             <Image
               src="/urban.png"
               alt="Urban Express Mobile Detailing"
-              width={50}
-              height={50}
-              className="w-12 h-12 object-contain"
+              width={70}
+              height={60}
+              className="w-13 h-15 object-contain"
             />
             <span className="text-white font-bold text-lg hidden sm:inline">Urban Express</span>
           </div>
