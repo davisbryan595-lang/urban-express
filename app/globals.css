@@ -4,10 +4,10 @@
 /* --- Custom palette from your hex values --- */
 :root {
   /* Base palette */
-  --brand-blue: oklch(0.65 0.18 241.5);   /* #0591CD */
-  --brand-gray-dark: oklch(0.36 0.02 255); /* #43474A */
-  --brand-black: oklch(0.05 0 0);          /* #010101 */
-  --brand-gray: oklch(0.62 0.02 250);      /* #7D8083 */
+  --brand-blue: #14AEE4;        /* Updated blue */
+  --brand-gray-dark: #83888E;   /* Updated gray */
+  --brand-black: oklch(0.05 0 0);          
+  --brand-gray: oklch(0.62 0.02 250);      
   --pure-white: oklch(1 0 0);
 
   /* Semantic tokens (glass base) */
@@ -107,11 +107,7 @@
   }
   body {
     @apply text-foreground;
-    background: linear-gradient(-45deg,
-      var(--brand-blue),
-      var(--brand-gray-dark),
-      var(--brand-gray),
-      var(--pure-white));
+    background: linear-gradient(-45deg, #83888E, #14AEE4, #83888E, #14AEE4);
     background-size: 400% 400%;
     animation: gradientShift 30s ease infinite;
   }
