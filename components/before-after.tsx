@@ -94,7 +94,7 @@ function BeforeAfterSlider({ before, after, title }: { before: string; after: st
 
 export function BeforeAfter() {
   return (
-    <section id="gallery" className="py-24 bg-zinc-950">
+    <section id="gallery" className="py-24 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">See The Difference</h2>
