@@ -10,45 +10,45 @@
   --brand-gray: oklch(0.62 0.02 250);      /* #7D8083 */
   --pure-white: oklch(1 0 0);
 
-  /* Semantic tokens */
-  --background: var(--pure-white);
+  /* Semantic tokens with transparency for sections */
+  --background: transparent; /* gradient anim handles base */
   --foreground: var(--brand-black);
 
-  --card: var(--pure-white);
+  --card: color-mix(in oklab, var(--pure-white) 80%, transparent);
   --card-foreground: var(--brand-black);
 
-  --popover: var(--pure-white);
+  --popover: color-mix(in oklab, var(--pure-white) 85%, transparent);
   --popover-foreground: var(--brand-black);
 
   --primary: var(--brand-blue);
   --primary-foreground: var(--pure-white);
 
-  --secondary: var(--brand-gray-dark);
+  --secondary: color-mix(in oklab, var(--brand-gray-dark) 80%, transparent);
   --secondary-foreground: var(--pure-white);
 
-  --accent: var(--brand-gray);
+  --accent: color-mix(in oklab, var(--brand-gray) 80%, transparent);
   --accent-foreground: var(--pure-white);
 
-  --muted: var(--brand-gray);
+  --muted: color-mix(in oklab, var(--brand-gray) 70%, transparent);
   --muted-foreground: var(--pure-white);
 
-  --destructive: oklch(0.65 0.24 27.3); /* reddish tone for errors */
+  --destructive: oklch(0.65 0.24 27.3);
   --destructive-foreground: var(--pure-white);
 
   --border: var(--brand-gray);
   --input: var(--brand-gray);
   --ring: var(--brand-blue);
 
-  /* Charts / extras – tie them to palette */
+  /* Charts / extras */
   --chart-1: var(--brand-blue);
   --chart-2: var(--brand-gray-dark);
   --chart-3: var(--brand-gray);
   --chart-4: var(--brand-black);
-  --chart-5: oklch(0.7 0.15 90); /* optional warm accent */
+  --chart-5: oklch(0.7 0.15 90);
 
   --radius: 0.625rem;
 
-  --sidebar: var(--pure-white);
+  --sidebar: color-mix(in oklab, var(--pure-white) 80%, transparent);
   --sidebar-foreground: var(--brand-black);
   --sidebar-primary: var(--brand-blue);
   --sidebar-primary-foreground: var(--pure-white);
@@ -57,8 +57,6 @@
   --sidebar-border: var(--brand-gray);
   --sidebar-ring: var(--brand-blue);
 }
-
-/* Removed .dark theme completely */
 
 /* Tailwind theme mapping */
 @theme inline {
@@ -109,26 +107,22 @@
   }
   body {
     @apply text-foreground;
-    min-height: 100vh;
-    background: linear-gradient(270deg, var(--brand-gray-dark), var(--brand-blue), var(--brand-gray));
-    background-size: 600% 600%;
+    background: linear-gradient(-45deg,
+      var(--brand-blue),
+      var(--brand-gray-dark),
+      var(--brand-gray),
+      var(--pure-white));
+    background-size: 400% 400%;
     animation: gradientShift 30s ease infinite;
   }
 }
 
-html {
-  scroll-behavior: smooth;
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* Animated gradient */
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+html {
+  scroll-behavior: smooth;
 }
