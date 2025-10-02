@@ -63,7 +63,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-6 text-lg group"
+                className="bg-primary hover:bg-primary/90 text-black font-semibold px-8 py-6 text-lg group"
                 asChild
               >
                 <a href="#contact">
