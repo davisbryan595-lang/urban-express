@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function QuickCTA() {
   return (
-    <section className="bg-black border-y border-white/10">
+    <section className="bg-transparent border-y border-white/10">
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
           <a
